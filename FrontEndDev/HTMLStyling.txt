@@ -1,5 +1,26 @@
-
 <style>
+
+  body {
+    background-color: black;
+    font-family: Arial;
+    color: white;
+  }
+
+  #orange-text {
+    color: orange;
+  }
+
+  .pink-text {
+    color: pink;
+  }
+  .blue-text {
+    color: blue;
+  }
+  
+  .white-text {
+    color: white !important;
+  }
+
   .injected-text {
     margin-bottom: -25px;
     text-align: center;
@@ -7,29 +28,36 @@
 
   .box {
     border-style: solid;
-    border-color: black;
+    border-color: grey;
     border-width: 5px;
     text-align: center;
   }
 
-  .yellow-box {
-    background-color: yellow;
+  .silver-box {
+    background-color: silver;
     padding: 10px;
   }
   
   .red-box {
     background-color: red;
-    padding: 20px;
+    padding: 60px 20px 60px 20px;
+    margin: 20px;
+    border-radius: 50%;
   }
 
-  .green-box {
-    background-color: green;
-    padding: 20px;
+  .black-box {
+    background-color: black;
+    padding: 20px 40px 20px 40px;
+    margin: 10px;
+    border-radius: 10px;
   }
 </style>
-<h5 class="injected-text">margin</h5>
+<h5 class="injected-text">Margin</h5>
 
-<div class="box yellow-box">
-  <h5 class="box red-box">padding</h5>
-  <h5 class="box green-box">padding</h5>
+<div class="box silver-box">
+  <h5 class="box red-box">RED</h5>
+  <h1 id="orange-text" class="pink-text blue-text white-text" style="color: red">
+     Color override.
+  </h1>
+  <h5 class="box black-box">BLACK</h5>
 </div>
